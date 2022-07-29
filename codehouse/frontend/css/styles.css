@@ -1,15 +1,75 @@
-:root {
-    --black: rgb(0, 0, 0);
-    --white: #fff;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: var(--black);
-    color: var(--white);
-}
+                    :root {
+                       --black: rgb(0, 0, 0);
+                       --white: #fff;
+                       --red: rgb(255, 0, 0);
+                       --blue: rgb(0, 0, 255);
+                   }
+                   
+                   * {
+                       margin: 0;
+                       padding: 0;
+                       box-sizing: border-box;
+                   }
+                   
+                   body {
+                       background: var(--black);
+                       color: var(--white);
+                   }
+                   
+                   a {
+                       cursor: pointer;
+                   }
+                   /* navigation panel */
+                   
+                   nav img.nav-logo {
+                       width: 120px;
+                       height: 50px;
+                   }
+                   /* the collapsible contents of the navbar */
+                   
+                   .navbar-collapsible-contents {
+                       justify-content: center;
+                   }
+                   
+                   nav form {
+                       display: inline-block;
+                       width: 60%;
+                       margin: 17px 5px 0 5px;
+                   }
+                   
+                   nav form i.search-icon {
+                       font-size: 25px;
+                       padding: 5px;
+                   }
+                   
+                   nav form input.search-input {
+                       padding: 5px;
+                       width: 50%;
+                       background: transparent;
+                   }
+                   
+                   nav form button {
+                       padding: 5px;
+                       width: 100px;
+                       border: 0;
+                   }
+                   
+                   nav .cart {
+                       color: var(--white);
+                       font-size: 21px;
+                   }
+                   
+                   .nav-item .nav-link {
+                       color: var(--white) !important;
+                   }
+                   
+                   .nav-item .dashboard-btn {
+                       background: var(--blue);
+                       margin-left: 25px;
+                   }
+                   
+                   .nav-item .dashboard-btn:hover {
+                       opacity: .8;
+                       box-shadow: 2px 2px 5px rgb(37, 33, 114);
+                       transition: 300ms ease-in;
+                   }
