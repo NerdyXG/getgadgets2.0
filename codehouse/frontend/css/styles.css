@@ -85,7 +85,7 @@ nav .cart {
     /* navbar section */
     nav form {
         display: inline-block;
-        width: 90%;
+        width: 90vw !important;
     }
     .nav-item .dashboard-btn {
         background: var(--white);
