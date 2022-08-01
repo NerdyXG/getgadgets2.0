@@ -2,8 +2,9 @@
     --black: rgb(0, 0, 0);
     --white: #fff;
     --red: rgb(255, 0, 0);
-    --blue: rgb(0, 0, 255);
+    --blue: rgb(115, 115, 237);
     --lightblue: rgb(197, 196, 230);
+    --grey: rgb(221, 215, 215);
 }
 
 * {
@@ -38,6 +39,9 @@ nav img.nav-logo {
     justify-content: center;
 }
 
+
+/* the search script */
+
 nav form {
     display: inline-block;
     padding: 17px 5px 0 5px;
@@ -69,12 +73,16 @@ nav form .search-text {
 .nav-button {
     background: var(--white);
     color: var(--black) !important;
+    border: 2px solid var(--white);
 }
 
 .nav-button:hover {
     opacity: .8;
     transition: 300ms ease-in;
 }
+
+
+/* the search script ends here */
 
 nav .cart {
     color: var(--white);
@@ -110,24 +118,70 @@ nav .cart {
 
 .dashboard-container {
     position: fixed;
-    width: 30%;
-    min-width: 350px;
+    width: 350px;
     margin-top: 100px;
+    overflow-y: scroll;
+    max-height: 85vh;
+}
+
+.list-group-item-action:hover {
+    transition: all 300ms ease-in !important;
+    background: var(--lightblue);
+    border-radius: 5px;
+    color: var(--red);
+    font-weight: bold;
 }
 
 
 /* accordion */
 
+.accordion-item {
+    border-bottom: 0 !important;
+}
+
+.accordion-header {
+    background: var(--black);
+    padding-bottom: 10px;
+}
+
+
+/* accordion-heading-text refers to the heading of an accordion section */
+
+.accordion-heading-text {
+    color: var(--blue);
+    background: var(--black);
+    padding: 30px 0 0 20px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
 .accordion-button {
     background: var(--black);
-    color: var(--blue);
+    color: var(--white);
     font-weight: 500;
-    font-size: 25px;
+    font-size: 15px;
     font-family: "Montserrat", sans-serif;
+}
+
+.accordion-button:hover {
+    opacity: .7;
+    transition: 300ms ease-in;
 }
 
 .accordion-body {
     background: var(--black);
+}
+
+.accordion-list a {
+    background: var(--black);
+    color: var(--grey);
+    font-size: 15px;
+    padding-bottom: 25px;
+}
+
+.accordion-list-footer {
+    padding: 5px;
 }
 
 
