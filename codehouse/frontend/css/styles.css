@@ -24,6 +24,10 @@ a {
     cursor: pointer;
 }
 
+hr {
+    background: var(--black);
+}
+
 
 /* navigation panel */
 
@@ -39,35 +43,10 @@ nav img.nav-logo {
     justify-content: center;
 }
 
-
-/* the search script */
-
 nav form {
     display: inline-block;
     padding: 17px 5px 0 5px;
     width: 50vw !important;
-}
-
-nav form i.search-icon {
-    font-size: 25px;
-    padding: 5px;
-    color: var(--black) !important;
-}
-
-.search-input {
-    padding: 5px;
-    background: transparent !important;
-    color: var(--white) !important;
-}
-
-.search-input:focus {
-    box-shadow: none;
-}
-
-nav form .search-text {
-    width: 100px;
-    border: 0;
-    text-align: center;
 }
 
 .nav-button {
@@ -80,9 +59,6 @@ nav form .search-text {
     opacity: .8;
     transition: 300ms ease-in;
 }
-
-
-/* the search script ends here */
 
 nav .cart {
     color: var(--white);
@@ -119,9 +95,9 @@ nav .cart {
 .dashboard-container {
     position: fixed;
     width: 350px;
-    margin-top: 100px;
     max-height: 85vh;
     overflow-y: auto;
+    z-index: 100;
 }
 
 .list-group-item-action:hover {
@@ -184,12 +160,38 @@ nav .cart {
     padding: 5px;
 }
 
+.themes {
+    background: var(--black);
+    color: var(--white);
+}
+
 .dropdown-menu-footer {
     background: var(--black) !important;
 }
 
 
 /* dashboard ends here */
+
+
+/* main content starts here */
+
+main.main-content {
+    margin-top: 100px;
+}
+
+
+/* search bar  */
+
+.search-field {
+    width: 80%;
+    justify-content: center;
+}
+
+
+/* the search script ends here */
+
+
+/* main content ends here */
 
 
 /* screens below laptop size */

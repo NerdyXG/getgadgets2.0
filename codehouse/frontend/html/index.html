@@ -33,13 +33,9 @@
             <span class="navbar-toggler-icon"></span>
           </button>
             <div class="collapse navbar-collapse navbar-collapsible-contents" id="navbarSupportedContent">
-                <form class="">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text input-group-addon nav-button"><i class="fa-brands fa-searchengin search-icon"></i></span>
-                        <input type="text" class="form-control search-input" aria-label="Search bar">
-                        <button class="input-group-text nav-button search-button" type="submit"><span class="search-text">Search</span></button>
-                    </div>
-                </form>
+
+                <audio src="../../../audio/piano-moment-9835.mp3" controls></audio>
+
                 <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -82,7 +78,7 @@
     <!-- navbar ends here -->
 
     <!-- dashboard starts here -->
-    <div class="dashboard-container collapse" id="sidebar">
+    <section class="dashboard-container collapse" id="sidebar">
         <div class="accordion accordion-flush" id="accordionExample">
 
             <!-- ebook section starts here -->
@@ -154,8 +150,9 @@
             <!-- electronics section starts here -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFour">
-                    <hr>
-                    <p class="accordion-heading-text">Shop by Department</p>
+
+                    <p class="accordion-heading-text">
+                        <hr> Shop by Department</p>
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         Electronics
                     </button>
@@ -377,8 +374,8 @@
                         </a>
 
                         <ul class="dropdown-menu dropdown-menu-footer" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item list-group-item-action" href="#">Light Theme</a></li>
-                            <li><a class="dropdown-item list-group-item-action" href="#">Dark Theme</a></li>
+                            <li><button class="dropdown-item list-group-item list-group-item-action themes light">Light Theme</button></li>
+                            <li><button class="dropdown-item list-group-item list-group-item-action themes dark">Dark Theme</button></li>
                         </ul>
                     </div>
                     <a href="#" class="list-group-item list-group-item-action">Sign in</a>
@@ -389,7 +386,23 @@
             <!-- sidebar-footer ends here -->
 
         </div>
-        <!-- dashboard ends here -->
+    </section>
+    <!-- dashboard ends here -->
+
+
+    <main class="main-content">
+        <div class="search-field">
+            <form>
+                <div class="input-group mb-3">
+                    <span class="input-group-text input-group-addon nav-button"><i class="fa-brands fa-searchengin search-icon"></i></span>
+                    <input type="text" class="form-control search-input" aria-label="Search bar">
+                    <button class="input-group-text nav-button search-button" type="submit"><span class="search-text">Search</span></button>
+                </div>
+            </form>
+
+            <!-- search-field ends here -->
+        </div>
+    </main>
 
 
 
@@ -419,17 +432,17 @@
 
 
 
+    <!-- Optional JavaScript; choose one of the two! -->
 
-        <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-        <!-- Option 2: Separate Popper and Bootstrap JS -->
-        <!--
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+    <script src="../script/index.js"></script>
 </body>
 
 </html>
